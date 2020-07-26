@@ -1,3 +1,5 @@
+$font-color: #222;
+
 html {
   height: 100%;
 }
@@ -19,3 +21,11 @@ header {
   max-width: 996px;
   margin: 0 auto;
 }
+
+.title {
+  a:visited {
+    color: $font-color;
+  }
+}
+
+@import "typography";
