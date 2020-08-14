@@ -4,11 +4,6 @@ html {
   height: 100%;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -20,6 +15,8 @@ header {
 .wrapper {
   max-width: 996px;
   margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .title {
