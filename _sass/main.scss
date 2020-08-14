@@ -1,15 +1,28 @@
 $font-color: #222;
+$footer-height: 100px;
 
 html {
   height: 100%;
 }
 
-a {
-  text-decoration: none;
+body {
+  min-height: 100%;
+  margin: 0;
 }
 
 header {
   height: 60px;
+}
+
+footer {
+  position: absolute;
+  height: $footer-height;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -17,6 +30,10 @@ header {
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.content {
+  padding-bottom: $footer-height;
 }
 
 .title {
