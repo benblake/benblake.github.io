@@ -1,7 +1,11 @@
 <nav>
   <div class="wrapper">
-    {% for item in site.data.navigation %}
-      <a href="{{ item.path }}">{{ item.name }}</a>
-    {% endfor %}
+    <div class="nav-container">
+      {% for item in site.data.navigation %}
+        <div class="nav-item">
+          <h5><a href="{{ item.path }}">{{ item.name }}</a></h5>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 </nav>

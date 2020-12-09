@@ -3,15 +3,18 @@ $footer-height: 100px;
 
 html {
   height: 100%;
+  background-color: #f6f6f6;
 }
 
 body {
   min-height: 100%;
+  position: relative;
   margin: 0;
 }
 
 header {
-  height: 60px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 footer {
@@ -26,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: $font-color;
+}
+
 .wrapper {
   max-width: 996px;
   margin: 0 auto;
@@ -33,14 +40,45 @@ a {
   padding-right: 24px;
 }
 
+#header-image {
+  // border: 2px solid teal;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+
+.nav-container {
+  border-top: 2px solid teal;
+  border-bottom: 2px solid teal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-item {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
 .content {
   padding-bottom: $footer-height;
 }
 
+.footer-container {
+  border-top: 2px solid teal;
+}
+
 .title {
-  a:visited {
-    color: $font-color;
-  }
+  padding-left: 36px;
 }
 
 @import "typography";
